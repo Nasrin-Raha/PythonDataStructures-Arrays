@@ -27,8 +27,6 @@ february_expenses = monthly_expenses[1]
 march_expenses = monthly_expenses[2]
 april_expenses = monthly_expenses[3]
 may_expenses = monthly_expenses[4]
-monthly_expenses.append(1980)
-print("Monthly expenses including June:", monthly_expenses)
 
 extra_spent_in_february  = january_expenses - february_expenses
 print("Extra dollars spent in February compared to January:" , extra_spent_in_february )
@@ -42,7 +40,10 @@ for index, expense in enumerate(monthly_expenses):
         break
 else:
     print("You did not spend exactly $2000 in any month.")
-    
+
+monthly_expenses.append(1980)
+print("Monthly expenses including June:", monthly_expenses)
+                       
 refund_april = 200
 april_index = 3
 monthly_expenses[april_index] -= refund_april
